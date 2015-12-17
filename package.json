@@ -1,6 +1,6 @@
 {
   "name": "caleres-sass-module-importer",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "description": "Import Sass files from NPM and Bower Modules lightly modified to support libsass options and caleres-sass-manager",
   "author": "Lucas Motta <mail@lucasmotta.com> (lucasmotta.com)",
