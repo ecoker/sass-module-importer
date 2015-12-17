@@ -30,22 +30,23 @@ find.bower = function(file) {
  * Look for Sass files installed through npm
  * @return {Function}         Function to be used by node-sass importer
  */
-export default function(opts) {
+export default function(opts, map) {
 
   options = opts || options;
+  map = map || [];
 
   const aliases = new Map();
 
   return function(url, _, done) {
 
     if (aliases.has(url)) {
-
+      map.push(aliases.get(url));
       return done({ file: aliases.get(url) });
 
     }
 
     find.npm(url).then(find.bower).then((file) => {
-
+      map.push(file);
       aliases.set(url, file);
       done({ file });
 
