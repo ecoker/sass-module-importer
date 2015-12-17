@@ -1,15 +1,16 @@
 {
-  "name": "sass-module-importer",
-  "version": "1.0.2",
+  "name": "caleres-sass-module-importer",
+  "version": "1.0.0",
   "main": "lib/index.js",
-  "description": "Import Sass files from NPM and Bower Modules",
+  "description": "Import Sass files from NPM and Bower Modules lightly modified to support libsass options and caleres-sass-manager",
   "author": "Lucas Motta <mail@lucasmotta.com> (lucasmotta.com)",
+  "contributors": [{
+    "name": "Ehren Coker",
+    "email": "mrcoker@gmail.com"
+  }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucasmotta/sass-module-importer"
-  },
-  "bugs": {
-    "url": "https://github.com/lucasmotta/sass-module-importer/issues"
+    "url": "https://github.com/ecoker/sass-module-importer"
   },
   "license": "MIT",
   "keywords": [
